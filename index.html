@@ -8,6 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="manifest" href="/site.webmanifest" />
 
+    <!-- alpine -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.12/dist/cdn.min.js"
+    ></script>
+
     <!-- twind -->
     <script src="https://cdn.twind.style" crossorigin></script>
 
@@ -101,6 +107,32 @@
             <div><strong>Local IP:</strong> 192.168.0.220/24</div>
           </div>
         </div>
+      </div>
+
+      <!-- insane hack, why is javascript like this? -->
+      <div
+        x-data="{
+                  unixDateFormat: (d = new Date()) => {
+                    const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+                    const months = ['Jan','Feb','Mar','Apr','May','Jun',
+                                    'Jul','Aug','Sep','Oct','Nov','Dec'];
+
+                    const utc3 = new Date(d.getTime() - 3 * 60 * 60 * 1000);
+
+                    const day = days[utc3.getUTCDay()];
+                    const mon = months[utc3.getUTCMonth()];
+                    const date = String(utc3.getUTCDate()).padStart(2, ' ');
+                    const hh = String(utc3.getUTCHours()).padStart(2, '0');
+                    const mm = String(utc3.getUTCMinutes()).padStart(2, '0');
+                    const ss = String(utc3.getUTCSeconds()).padStart(2, '0');
+                    const year = utc3.getUTCFullYear();
+
+                    return `${day} ${mon} ${date} ${hh}:${mm}:${ss} -03 ${year}`;
+                  }
+                }"
+      >
+        <div class="text-pink-400 font-bold">&gt; date</div>
+        <p class="mt-1" x-text="unixDateFormat()"></p>
       </div>
 
       <!-- finger -->
@@ -315,14 +347,23 @@
                 <p class="pl-2 md:pl-6">Tomaselli MTB</p>
               </div>
             </div>
+          </div>
           <div>
             <h2 class="font-bold text-pink-400">SEE ALSO</h2>
             <div class="pl-4 md:pl-8 space-y-3">
               <div>
-                  <strong class="text-pink-200 block underline"><a href="https://nixwebr.ing/">Nix Webring</a></strong>
-                  <p class="pl-2 md:pl-6 underline"><a href="https://nixwebr.ing/prev/teaboi">Previous</a></p>
-                  <p class="pl-2 md:pl-6 underline"><a href="https://nixwebr.ing/next/teaboi">Next</a></p>
-                  <p class="pl-2 md:pl-6 underline"><a href="https://nixwebr.ing/rand">Random</a></p>
+                <strong class="text-pink-200 block underline"
+                  ><a href="https://nixwebr.ing/">Nix Webring</a></strong
+                >
+                <p class="pl-2 md:pl-6 underline">
+                  <a href="https://nixwebr.ing/prev/teaboi">Previous</a>
+                </p>
+                <p class="pl-2 md:pl-6 underline">
+                  <a href="https://nixwebr.ing/next/teaboi">Next</a>
+                </p>
+                <p class="pl-2 md:pl-6 underline">
+                  <a href="https://nixwebr.ing/rand">Random</a>
+                </p>
               </div>
             </div>
           </div>
