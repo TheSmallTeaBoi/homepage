@@ -1,55 +1,323 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>TeaBoi</title>
+    <title>Theo</title>
     <meta name="description" content="Landing Page" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- twind -->
     <script src="https://cdn.twind.style" crossorigin></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --font-family-mono: "Red Hat Mono", monospace;
+      }
+    </style>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link
+      class="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png"
+    />
   </head>
-  <body class="bg-slate-800 text-red-200">
-    <main class="p-2">
-      <article
-        class="p-4 m-8 rounded-2xl bg-red-900/10 hover:bg-red-900/20 transition-colors duration-1000 hover:duration-100"
-      >
-        <h1 class="text-center text-3xl font-bold">TeaBoi</h1>
-        <ul>
-          <li><i class="fa-brands fa-discord"></i>Test</li>
-          <li>Test 2</li>
-        </ul>
-      </article>
-      <article
-        class="p-4 m-8 rounded-2xl bg-blue-slate-900 hover:bg-slate-600 transition-colors duration-1000 hover:duration-100"
-      >
-        <h1 class="text-center text-3xl font-bold">TeaBoi</h1>
-        <ul>
-          <li><i class="fa-brands fa-discord"></i>Test</li>
-          <li>Test 2</li>
-        </ul>
-      </article>
-      <article
-        class="p-4 m-8 rounded-2xl bg-green-900/10 hover:bg-green-900/20 transition-colors duration-1000 hover:duration-100"
-      >
-        <h1 class="text-center text-3xl font-bold">TeaBoi</h1>
-        <ul>
-          <li><i class="fa-brands fa-discord"></i>Test</li>
-          <li>Test 2</li>
-        </ul>
-      </article>
-      <article
-        class="p-4 m-8 bg-purple-900/10 rounded-2xl hover:bg-purple-900/20 transition-colors duration-1000 hover:duration-100"
-      >
-        <h1 class="text-center text-3xl font-bold">TeaBoi</h1>
-        <ul>
-          <li><i class="fa-brands fa-discord"></i>Test</li>
-          <li>Test 2</li>
-        </ul>
-      </article>
+
+  <!-- actual website -->
+  <body
+    class="bg-slate-900 text-pink-300 font-mono min-h-screen flex flex-col justify-start md:justify-center py-6 text-sm md:text-base"
+  >
+    <main
+      class="p-4 my-6 w-[92%] md:w-4/5 lg:w-3/5 mx-auto max-w-5xl space-y-8"
+    >
+      <div>
+        <div class="text-pink-400 font-bold">&gt; whoami</div>
+        <p class="mt-1">theo</p>
+      </div>
+
+      <!-- fastfetch -->
+      <div>
+        <div class="text-pink-400 font-bold">&gt; fastfetch</div>
+        <div
+          class="flex flex-col md:flex-row items-start gap-6 md:gap-12 overflow-x-auto"
+        >
+          <pre
+            class="leading-none text-[10px] sm:text-xs md:text-sm select-none text-pink-400 max-w-full"
+          >
+          ▗▄▄▄       ▗▄▄▄▄    ▄▄▄▖
+          ▜███▙       ▜███▙  ▟███▛
+           ▜███▙       ▜███▙▟███▛
+            ▜███▙       ▜██████▛
+     ▟█████████████████▙ ▜████▛     ▟▙
+    ▟███████████████████▙ ▜███▙    ▟██▙
+           ▄▄▄▄▖           ▜███▙  ▟███▛
+          ▟███▛             ▜██▛ ▟███▛
+         ▟███▛               ▜▛ ▟███▛
+▟███████████▛                  ▟██████████▙
+▜██████████▛                  ▟███████████▛
+      ▟███▛ ▟▙               ▟███▛
+     ▟███▛ ▟██▙             ▟███▛
+    ▟███▛  ▜███▙           ▝▀▀▀▀
+    ▜██▛    ▜███▙ ▜██████████████████▛
+     ▜▛     ▟████▙ ▜████████████████▛
+           ▟██████▙         ▜███▙
+          ▟███▛▜███▙         ▜███▙
+         ▟███▛  ▜███▙         ▜███▙
+         ▝▀▀▀    ▀▀▀▀▘         ▀▀▀▘
+          </pre>
+
+          <div class="whitespace-nowrap">
+            <div class="font-bold text-pink-400">theo@ratholomew</div>
+            <div class="text-pink-400/60">---------------</div>
+            <div>
+              <strong>OS:</strong>
+              <a
+                class="underline"
+                href="https://github.com/thesmallteaboi/frogix"
+                >NixOS</a
+              >
+            </div>
+            <div><strong>Kersel:</strong> Latest Linux</div>
+            <div><strong>Shell:</strong> Fish</div>
+            <div><strong>WM:</strong> Hyprland</div>
+            <div><strong>Font:</strong> Red Hat Mono</div>
+            <div><strong>CPU:</strong> AMD Ryzen 5 5600G (12) @ 4.46 GHz</div>
+            <div>
+              <strong>GPU:</strong> NVIDIA GeForce RTX 2060 Rev. A [Discrete]
+            </div>
+            <div><strong>Memory:</strong> 31.24 GiB</div>
+            <div><strong>Local IP:</strong> 192.168.0.220/24</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- finger -->
+      <div>
+        <div class="text-pink-400 font-bold">&gt; finger theo</div>
+        <div class="space-y-1">
+          <div class="flex">
+            <span class="w-24 shrink-0 font-bold">GitHub:</span>
+            <a class="underline" href="https://github.com/TheSmallTeaBoi"
+              >TheSmallTeaBoi</a
+            >
+          </div>
+          <div class="flex">
+            <span class="w-24 shrink-0 font-bold">Last.fm:</span>
+            <a class="underline" href="https://www.last.fm/user/SmallTeaBoi"
+              >SmallTeaBoi</a
+            >
+          </div>
+          <div class="flex">
+            <span class="w-24 shrink-0 font-bold">Discord:</span>
+            <span>smallteaboi</span>
+          </div>
+          <div class="flex">
+            <span class="w-24 shrink-0 font-bold">Steam:</span>
+            <a
+              class="underline"
+              href="https://steamcommunity.com/profiles/[U:1:425842496]"
+              >Theo</a
+            >
+          </div>
+          <div class="flex">
+            <span class="w-24 shrink-0 font-bold">Soulseek:</span>
+            <span>TheSmallTeaBoi</span>
+          </div>
+          <div class="flex">
+            <span class="w-24 shrink-0 font-bold">Reddit:</span>
+            <a class="underline" href="https://www.reddit.com/user/SmallTeaBoi/"
+              >u/SmallTeaBoi</a
+            >
+          </div>
+          <div class="flex">
+            <span class="w-24 shrink-0 font-bold">YouTube:</span>
+            <a class="underline" href="https://www.youtube.com/@smallteaboi"
+              >@smallteaboi</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- man -->
+      <div>
+        <div class="text-pink-400 font-bold">&gt; man theo</div>
+
+        <div class="flex justify-between font-bold underline">
+          <span>THEO(1)</span>
+          <span class="hidden sm:inline">General Commands Manual</span>
+          <span>THEO(1)</span>
+        </div>
+
+        <div class="space-y-6">
+          <div>
+            <h2 class="font-bold text-pink-400">NAME</h2>
+            <p class="pl-4 md:pl-8">
+              theo - developer, cyclist, TTRPG designer, car enjoyer and tea
+              lover.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="font-bold text-pink-400">SYNOPSIS</h2>
+            <p class="pl-4 md:pl-8">
+              <strong class="font-bold text-pink-200">theo</strong>
+              [--tango] [--libre-audio] [--gyro] [--help]
+            </p>
+          </div>
+
+          <div>
+            <h2 class="font-bold text-pink-400">DESCRIPTION</h2>
+            <p class="pl-4 md:pl-8">
+              <strong class="font-bold text-pink-200">theo</strong> (also known
+              as <span class="font-bold text-pink-200">teaboi</span>) is a
+              NixOS-using developer based in Argentina. theo was born master
+              baiting before he even exited the womb. He likes a good absurdist
+              joke here and there, or all the time. He's into a variety of
+              things, including: music, Linux, radios, handhelds, emulation,
+              homelabbing and gaming. He's an absolute fan of chai latte,
+              cycling and old cars. He enjoys providing help whenever he can.
+              He's got a hot partner whom he's head over heels for, even if
+              they're really far away physically.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="font-bold text-pink-400">PROJECTS</h2>
+            <div class="pl-4 md:pl-8 space-y-4">
+              <div>
+                <strong class="text-pink-200 block">Tango TTRPG</strong>
+                <p class="pl-2 md:pl-6">
+                  An original tabletop role-playing game currently under very
+                  active design, development and playtest.
+                </p>
+              </div>
+              <div>
+                <strong class="text-pink-200 block">
+                  <a
+                    class="underline"
+                    href="https://github.com/TheSmallTeaBoi/the-libre-sample-pack"
+                    >The Libre Sample Pack</a
+                  >
+                </strong>
+                <p class="pl-2 md:pl-6">
+                  A collaborative, free (as in freedom) sample and preset pack
+                  tailored specifically for Linux-based musicians and
+                  open-source audio tools.
+                </p>
+              </div>
+              <div>
+                <strong class="text-pink-200 block">
+                  <a
+                    class="underline"
+                    href="https://github.com/TheSmallTeaBoi/evil-launcher"
+                    >evil-launcher</a
+                  >
+                </strong>
+                <p class="pl-2 md:pl-6">
+                  A work-in-progress, Python-based CLI launcher designed for
+                  managing and launching Classic Doom mods and source ports,
+                  with a focus on modpacks.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="font-bold text-pink-400">PREFERENCES</h2>
+            <div class="pl-4 md:pl-8 space-y-3">
+              <div>
+                <strong class="text-pink-200 block">Editor</strong>
+                <p class="pl-2 md:pl-6">
+                  Uses
+                  <a
+                    class="underline"
+                    href="https://github.com/doomemacs/doomemacs"
+                    >Doom emacs</a
+                  >, configured through
+                  <a
+                    class="underline"
+                    href="https://github.com/marienz/nix-doom-emacs-unstraightened"
+                    >nix-doom-emacs-unstraightened</a
+                  >
+                </p>
+              </div>
+              <div>
+                <strong class="text-pink-200 block">Keyboard Layout</strong>
+                <p class="pl-2 md:pl-6">
+                  Uses the
+                  <a class="underline" href="https://oxey.dev/layouts/sturdy/"
+                    >Sturdy</a
+                  >
+                  keyboard layout.
+                </p>
+              </div>
+              <div>
+                <strong class="text-pink-200 block">Gyro Gaming</strong>
+                <p class="pl-2 md:pl-6">
+                  Prefers controller-based gyroscopic aiming (<a
+                    class="underline"
+                    href="https://youtu.be/rOybuNm9XR8"
+                    >gyro aim</a
+                  >) over traditional analog stick input or mice for FPSs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="font-bold text-pink-400">HARDWARE</h2>
+            <div class="pl-4 md:pl-8 space-y-3">
+              <div>
+                <strong class="text-pink-200 block">Workstation</strong>
+                <p class="pl-2 md:pl-6">
+                  AMD Ryzen 5 5600G (12) | NVIDIA RTX 2060 Rev. A [Discrete] |
+                  31.24 GiB RAM
+                </p>
+              </div>
+              <div>
+                <strong class="text-pink-200 block">Home Server</strong>
+                <p class="pl-2 md:pl-6">
+                  Intel Core i3-9100F | NVIDIA GeForce GT 730 [Discrete] | 15.56
+                  GiB RAM
+                </p>
+              </div>
+              <div>
+                <strong class="text-pink-200 block">Keyboard</strong>
+                <p class="pl-2 md:pl-6">
+                  <a
+                    class="underline"
+                    href="https://squalius-cephalus.github.io/silakka54/"
+                    >Silakka54</a
+                  >
+                  split keyboard.
+                </p>
+              </div>
+              <div>
+                <strong class="text-pink-200 block">Gravel Bike</strong>
+                <p class="pl-2 md:pl-6">
+                  Raleigh Mojave 2.0 with a Corner Bars clone
+                </p>
+              </div>
+              <div>
+                <strong class="text-pink-200 block">Commuting bike</strong>
+                <p class="pl-2 md:pl-6">Tomaselli MTB</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
